@@ -1,0 +1,11 @@
+{
+    "model_path": "saved_models/defended_noisy_fp16_10pct_v3",
+    "dataset": "wikitext2_test",
+    "num_samples": 4358,
+    "perplexity": {
+        "fp16": 11.864873886108398,
+        "int8": 11.926119804382324,
+        "4bit": 12.982911109924316
+    },
+    "timestamp": "2026-01-17T16:49:28.743968"
+}

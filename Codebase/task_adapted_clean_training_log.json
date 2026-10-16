@@ -1,0 +1,25 @@
+{
+  "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+  "output_dir": "saved_models/wikitext2_clean_adapted_fp16",
+  "training_args": {
+    "max_steps": 200,
+    "learning_rate": 2e-05,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_size": 4,
+    "fp16": true,
+    "seq_len": 2048
+  },
+  "perplexity": {
+    "baseline_zero_shot": 12.589334487915039,
+    "task_adapted_final": 10.804597854614258,
+    "improvement": 1.7847366333007812,
+    "improvement_pct": 14.176576490314202
+  },
+  "train_metrics": {
+    "train_loss": 2.5035239028930665,
+    "train_runtime": 3344.4313,
+    "train_samples_per_second": 0.239
+  },
+  "timestamp": "2026-01-18T18:14:09.998761"
+}

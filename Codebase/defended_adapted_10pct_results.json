@@ -1,0 +1,39 @@
+{
+  "clean_model_path": "saved_models/wikitext2_clean_adapted_fp16",
+  "attacked_model_path": "saved_models/wikitext2_attacked_adapted_fp16_10pct",
+  "defended_model_path": "saved_models/wikitext2_defended_adapted_fp16_10pct",
+  "methodology": "method_a_task_adapted_baseline",
+  "precision_levels": {
+    "fp16": {
+      "ppl_clean_adapted": 10.804672241210938,
+      "ppl_attacked": 12.353670120239258,
+      "ppl_defended": 11.756138801574707,
+      "recovery_pct": 38.575347762217696,
+      "ordering_correct": true,
+      "expected_ordering": "PPL_clean < PPL_defended < PPL_attacked",
+      "degradation_from_attack": 14.336370825948496,
+      "improvement_from_defense": 4.836872871371266
+    },
+    "int8": {
+      "ppl_clean_adapted": 10.85684871673584,
+      "ppl_attacked": 12.412262916564941,
+      "ppl_defended": 11.81275463104248,
+      "recovery_pct": 38.54332084587699,
+      "ordering_correct": true,
+      "expected_ordering": "PPL_clean < PPL_defended < PPL_attacked",
+      "degradation_from_attack": 14.326571553230078,
+      "improvement_from_defense": 4.829967666269618
+    },
+    "4bit": {
+      "ppl_clean_adapted": 11.818704605102539,
+      "ppl_attacked": 13.678175926208496,
+      "ppl_defended": 12.871874809265137,
+      "recovery_pct": 43.361847412833235,
+      "ordering_correct": true,
+      "expected_ordering": "PPL_clean < PPL_defended < PPL_attacked",
+      "degradation_from_attack": 15.733292126644402,
+      "improvement_from_defense": 5.894800017876806
+    }
+  },
+  "timestamp": "2026-01-19T17:40:11.256850"
+}

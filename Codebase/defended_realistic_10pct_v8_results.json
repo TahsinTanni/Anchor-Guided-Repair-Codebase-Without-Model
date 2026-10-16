@@ -1,0 +1,11 @@
+{
+    "model_path": "saved_models/defended_realistic_10pct_v8",
+    "dataset": "wikitext2_test",
+    "num_samples": 4358,
+    "perplexity": {
+        "fp16": 12.132198333740234,
+        "int8": 12.190984725952148,
+        "4bit": 13.555892944335938
+    },
+    "timestamp": "2026-01-18T15:49:38.583787"
+}

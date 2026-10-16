@@ -1,0 +1,14 @@
+Qwen2.5-0.5B Perplexity Comparison
+============================================================
+Dataset: WikiText-2 Test Set (4358 samples, 299078 tokens)
+Timestamp: 2026-01-06 10:36:47
+
+FP16 Perplexity:  12.46
+INT8 Perplexity:  12.48
+4-BIT Perplexity: 13.79
+============================================================
+
+Perplexity Increase vs FP16:
+INT8: +0.14%
+4-BIT: +10.64%
+============================================================

@@ -1,0 +1,12 @@
+{
+    "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "quantization": "fp16",
+    "perplexity": 12.464152336120605,
+    "dataset": "wikitext2_test",
+    "num_samples": 4358,
+    "sequence_length": 299078,
+    "device": "cuda",
+    "timestamp": "2026-01-06T10:33:51.834103",
+    "num_parameters": 494032768,
+    "dtype": "float16"
+}

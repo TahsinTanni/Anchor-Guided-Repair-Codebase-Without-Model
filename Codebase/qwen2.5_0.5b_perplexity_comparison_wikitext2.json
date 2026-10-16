@@ -1,0 +1,36 @@
+{
+    "fp16": {
+        "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+        "quantization": "fp16",
+        "perplexity": 12.464152336120605,
+        "dataset": "wikitext2_test",
+        "num_samples": 4358,
+        "sequence_length": 299078,
+        "device": "cuda",
+        "timestamp": "2026-01-06T10:33:51.834103",
+        "num_parameters": 494032768,
+        "dtype": "float16"
+    },
+    "int8": {
+        "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+        "quantization": "int8",
+        "perplexity": 12.481566429138184,
+        "dataset": "wikitext2_test",
+        "num_samples": 4358,
+        "sequence_length": 299078,
+        "device": "cuda",
+        "timestamp": "2026-01-06T10:35:37.889055",
+        "num_parameters": 494032768
+    },
+    "4bit": {
+        "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+        "quantization": "4bit (NF4)",
+        "perplexity": 13.790040969848633,
+        "dataset": "wikitext2_test",
+        "num_samples": 4358,
+        "sequence_length": 299078,
+        "device": "cuda",
+        "timestamp": "2026-01-06T10:36:47.151293",
+        "num_parameters": 315119488
+    }
+}

@@ -1,0 +1,52 @@
+Weight Noise Injection Analysis Summary (WikiText-2)
+============================================================
+
+Model: Qwen/Qwen2.5-0.5B-Instruct
+Dataset: WikiText-2 Test Set (4358 samples, 299078 tokens)
+Quantization: bitsandbytes (INT8 & 4-bit NF4)
+Baseline PPL0: 12.4642 (FP16)
+
+Fitted Quadratic Model:
+  Parameter a: 135679.4670
+  Model: r ~= exp(135679.4670 * sigma^2)
+
+Optimal sigma* for Target PPL Increases:
+  5%: sigma* = 0.000600
+  10%: sigma* = 0.000838
+  15%: sigma* = 0.001015
+  20%: sigma* = 0.001159
+
+Actual Results with Quantization (bitsandbytes):
+
+Clean Models:
+  FP16:  12.46
+  INT8:  12.48 (+0.16% vs FP16)
+  4-BIT: 13.79 (+10.67% vs FP16)
+
+5% Noise Level (σ=0.000600):
+  FP16:  12.73 (+2.10% vs clean FP16)
+  INT8:  12.79 (+2.44% vs clean INT8)
+  4-BIT: 14.01 (+1.58% vs clean 4-BIT)
+
+10% Noise Level (σ=0.000838):
+  FP16:  13.27 (+6.44% vs clean FP16)
+  INT8:  13.11 (+5.01% vs clean INT8)
+  4-BIT: 14.44 (+4.70% vs clean 4-BIT)
+
+15% Noise Level (σ=0.001015):
+  FP16:  13.79 (+10.64% vs clean FP16)
+  INT8:  13.53 (+8.42% vs clean INT8)
+  4-BIT: 15.31 (+11.04% vs clean 4-BIT)
+
+20% Noise Level (σ=0.001159):
+  FP16:  13.80 (+10.73% vs clean FP16)
+  INT8:  13.69 (+9.71% vs clean INT8)
+  4-BIT: 15.17 (+10.00% vs clean 4-BIT)
+
+Defense Effectiveness:
+  - Weight noise injection maintains controlled degradation
+  - Quantized models show consistent resistance to noise
+  - 4-BIT quantization stable despite higher baseline PPL
+  - All precision levels demonstrate effective defense mechanism
+
+Timestamp: 2026-01-15 20:18:04

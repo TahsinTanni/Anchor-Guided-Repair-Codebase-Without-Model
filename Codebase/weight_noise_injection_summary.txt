@@ -1,0 +1,32 @@
+Weight Noise Injection Analysis Summary
+============================================================
+
+Model: microsoft/Phi-3-mini-4k-instruct
+Dataset: WikiText-2 test set
+Baseline PPL0 (FP32): 5.3028
+Number of samples: 4,358
+Total tokens: 341,468
+
+Fitted Quadratic Model:
+  Parameter a: 50702.4378
+  Model: r ~= exp(50702.4378 * sigma^2)
+
+Optimal sigma* for Target PPL Increases:
+  5%: sigma* = 0.000981
+  10%: sigma* = 0.001371
+  14%: sigma* = 0.001660
+
+Verification (10% PPL increase):
+  sigma*: 0.001371
+  Target PPL: 5.8331
+  Actual PPL: 5.4085
+  Error: 7.28%
+
+Clean Model Perplexities:
+  FP32: 5.3045
+  INT8: 5.3507 (+0.87% vs FP32)
+  4-BIT: 5.6275 (+6.08% vs FP32)
+
+Total layers modified: 175
+Total parameters: 3,821,079,552
+Timestamp: 2025-12-28 19:28:37

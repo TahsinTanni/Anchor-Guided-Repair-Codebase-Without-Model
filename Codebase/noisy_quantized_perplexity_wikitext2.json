@@ -1,0 +1,94 @@
+{
+    "dataset": "wikitext2_test",
+    "num_samples": 4358,
+    "model_name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "baseline": {
+        "fp16": 12.464152336120605,
+        "int8": 12.48068618774414,
+        "4bit": 13.791569709777832
+    },
+    "noise_levels": {
+        "5%": {
+            "target_ppl_increase": 5,
+            "sigma": 0.0005996655160730259,
+            "results": {
+                "fp16": {
+                    "perplexity": 12.775603294372559,
+                    "degradation_vs_clean_fp16_pct": 2.4987736819404955
+                },
+                "int8": {
+                    "perplexity": 12.806266784667969,
+                    "degradation_vs_clean_int8_pct": 2.608675452825212,
+                    "degradation_vs_clean_fp16_pct": 2.7447871248807636
+                },
+                "4bit": {
+                    "perplexity": 14.141067504882812,
+                    "degradation_vs_clean_4bit_pct": 2.5341408009357806,
+                    "degradation_vs_clean_fp16_pct": 13.453904634193014
+                }
+            }
+        },
+        "10%": {
+            "target_ppl_increase": 10,
+            "sigma": 0.0008381323042387242,
+            "results": {
+                "fp16": {
+                    "perplexity": 13.195513725280762,
+                    "degradation_vs_clean_fp16_pct": 5.867718633706849
+                },
+                "int8": {
+                    "perplexity": 13.42640209197998,
+                    "degradation_vs_clean_int8_pct": 7.577435166701969,
+                    "degradation_vs_clean_fp16_pct": 7.720137959729636
+                },
+                "4bit": {
+                    "perplexity": 14.633328437805176,
+                    "degradation_vs_clean_4bit_pct": 6.103429455390859,
+                    "degradation_vs_clean_fp16_pct": 17.40331827779725
+                }
+            }
+        },
+        "15%": {
+            "target_ppl_increase": 15,
+            "sigma": 0.001015,
+            "results": {
+                "fp16": {
+                    "perplexity": 13.790639877319336,
+                    "degradation_vs_clean_fp16_pct": 10.642420803495988
+                },
+                "int8": {
+                    "perplexity": 13.531147956848145,
+                    "degradation_vs_clean_int8_pct": 8.41669883612283,
+                    "degradation_vs_clean_fp16_pct": 8.560514922747126
+                },
+                "4bit": {
+                    "perplexity": 15.313605308532715,
+                    "degradation_vs_clean_4bit_pct": 11.03598524884229,
+                    "degradation_vs_clean_fp16_pct": 22.86118538646636
+                }
+            }
+        },
+        "20%": {
+            "target_ppl_increase": 20,
+            "sigma": 0.001159,
+            "results": {
+                "fp16": {
+                    "perplexity": 13.80203628540039,
+                    "degradation_vs_clean_fp16_pct": 10.733854282273589
+                },
+                "int8": {
+                    "perplexity": 13.692280769348145,
+                    "degradation_vs_clean_int8_pct": 9.707756155216634,
+                    "degradation_vs_clean_fp16_pct": 9.853284845279633
+                },
+                "4bit": {
+                    "perplexity": 15.170520782470703,
+                    "degradation_vs_clean_4bit_pct": 9.99850707142664,
+                    "degradation_vs_clean_fp16_pct": 21.713217019236456
+                }
+            }
+        }
+    },
+    "optimal_sigmas_source": "wikitext2_calculated",
+    "timestamp": "2026-01-15T20:18:04.259900"
+}

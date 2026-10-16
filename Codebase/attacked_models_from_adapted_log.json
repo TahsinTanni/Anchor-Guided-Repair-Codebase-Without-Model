@@ -1,0 +1,191 @@
+{
+  "base_model_path": "saved_models/wikitext2_clean_adapted_fp16",
+  "baseline_ppl": 10.804672241210938,
+  "noise_levels": [
+    {
+      "noise_pct": 5,
+      "sigma": 0.001,
+      "baseline_ppl": 10.804672241210938,
+      "attacked_ppl": 11.434515953063965,
+      "target_increase_pct": 5,
+      "actual_increase_pct": 5.829364350828632,
+      "output_path": "saved_models\\wikitext2_attacked_adapted_fp16_5pct",
+      "noise_stats_sample": [
+        {
+          "layer": "model.embed_tokens.weight",
+          "shape": [
+            151936,
+            896
+          ],
+          "num_params": 136134656,
+          "original_mean": 4.6372413635253906e-05,
+          "original_std": 0.01519775390625,
+          "noise_mean": -0.0,
+          "noise_std": 0.0010004043579101562
+        },
+        {
+          "layer": "model.layers.0.self_attn.q_proj.weight",
+          "shape": [
+            896,
+            896
+          ],
+          "num_params": 802816,
+          "original_mean": -1.6927719116210938e-05,
+          "original_std": 0.0667724609375,
+          "noise_mean": -5.960464477539062e-07,
+          "noise_std": 0.00099945068359375
+        },
+        {
+          "layer": "model.layers.0.self_attn.q_proj.bias",
+          "shape": [
+            896
+          ],
+          "num_params": 896,
+          "original_mean": -0.1519775390625,
+          "original_std": 7.85546875,
+          "noise_mean": 8.821487426757812e-06,
+          "noise_std": 0.0010042190551757812
+        }
+      ]
+    },
+    {
+      "noise_pct": 10,
+      "sigma": 0.0015,
+      "baseline_ppl": 10.804672241210938,
+      "attacked_ppl": 12.353670120239258,
+      "target_increase_pct": 10,
+      "actual_increase_pct": 14.336370825948496,
+      "output_path": "saved_models\\wikitext2_attacked_adapted_fp16_10pct",
+      "noise_stats_sample": [
+        {
+          "layer": "model.embed_tokens.weight",
+          "shape": [
+            151936,
+            896
+          ],
+          "num_params": 136134656,
+          "original_mean": 4.6372413635253906e-05,
+          "original_std": 0.01519775390625,
+          "noise_mean": -0.0,
+          "noise_std": 0.0015001296997070312
+        },
+        {
+          "layer": "model.layers.0.self_attn.q_proj.weight",
+          "shape": [
+            896,
+            896
+          ],
+          "num_params": 802816,
+          "original_mean": -1.6927719116210938e-05,
+          "original_std": 0.0667724609375,
+          "noise_mean": -2.980232238769531e-07,
+          "noise_std": 0.0015001296997070312
+        },
+        {
+          "layer": "model.layers.0.self_attn.q_proj.bias",
+          "shape": [
+            896
+          ],
+          "num_params": 896,
+          "original_mean": -0.1519775390625,
+          "original_std": 7.85546875,
+          "noise_mean": -3.314018249511719e-05,
+          "noise_std": 0.00151824951171875
+        }
+      ]
+    },
+    {
+      "noise_pct": 15,
+      "sigma": 0.002,
+      "baseline_ppl": 10.804672241210938,
+      "attacked_ppl": 13.868616104125977,
+      "target_increase_pct": 15,
+      "actual_increase_pct": 28.357582668992155,
+      "output_path": "saved_models\\wikitext2_attacked_adapted_fp16_15pct",
+      "noise_stats_sample": [
+        {
+          "layer": "model.embed_tokens.weight",
+          "shape": [
+            151936,
+            896
+          ],
+          "num_params": 136134656,
+          "original_mean": 4.6372413635253906e-05,
+          "original_std": 0.01519775390625,
+          "noise_mean": 4.172325134277344e-07,
+          "noise_std": 0.0020008087158203125
+        },
+        {
+          "layer": "model.layers.0.self_attn.q_proj.weight",
+          "shape": [
+            896,
+            896
+          ],
+          "num_params": 802816,
+          "original_mean": -1.6927719116210938e-05,
+          "original_std": 0.0667724609375,
+          "noise_mean": -1.9073486328125e-06,
+          "noise_std": 0.0020008087158203125
+        },
+        {
+          "layer": "model.layers.0.self_attn.q_proj.bias",
+          "shape": [
+            896
+          ],
+          "num_params": 896,
+          "original_mean": -0.1519775390625,
+          "original_std": 7.85546875,
+          "noise_mean": 3.135204315185547e-05,
+          "noise_std": 0.00201416015625
+        }
+      ]
+    },
+    {
+      "noise_pct": 20,
+      "sigma": 0.0025,
+      "baseline_ppl": 10.804672241210938,
+      "attacked_ppl": 16.410934448242188,
+      "target_increase_pct": 20,
+      "actual_increase_pct": 51.887387991724275,
+      "output_path": "saved_models\\wikitext2_attacked_adapted_fp16_20pct",
+      "noise_stats_sample": [
+        {
+          "layer": "model.embed_tokens.weight",
+          "shape": [
+            151936,
+            896
+          ],
+          "num_params": 136134656,
+          "original_mean": 4.6372413635253906e-05,
+          "original_std": 0.01519775390625,
+          "noise_mean": -1.1920928955078125e-07,
+          "noise_std": 0.0025005340576171875
+        },
+        {
+          "layer": "model.layers.0.self_attn.q_proj.weight",
+          "shape": [
+            896,
+            896
+          ],
+          "num_params": 802816,
+          "original_mean": -1.6927719116210938e-05,
+          "original_std": 0.0667724609375,
+          "noise_mean": -2.3245811462402344e-06,
+          "noise_std": 0.00250244140625
+        },
+        {
+          "layer": "model.layers.0.self_attn.q_proj.bias",
+          "shape": [
+            896
+          ],
+          "num_params": 896,
+          "original_mean": -0.1519775390625,
+          "original_std": 7.85546875,
+          "noise_mean": 1.0728836059570312e-05,
+          "noise_std": 0.0025539398193359375
+        }
+      ]
+    }
+  ],
+  "timestamp": "2026-01-18T18:36:15.453655"
+}
